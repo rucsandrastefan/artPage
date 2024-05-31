@@ -1,0 +1,62 @@
+
+
+.navbar {
+    background-color: black;
+    padding: 10px 0px;
+    height: 6vh;
+    width: 100%;
+    align-content: center;
+    position: fixed;
+    z-index: 1000;
+  }
+  
+  .navbarList {
+    list-style-type: none;
+    margin-right: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbarItem {
+    margin-right: 20px;
+    margin-left: 20px;
+    gap: 20px;
+  }
+  .navbarItem:first-child {
+    margin-left: 20px; /* Push the first item to the left */
+  }
+  .navbarItem a {
+    color: #F4F5F0;
+    text-decoration: none;
+    
+    font-weight: 500;
+    font-size: large;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 0.2em 0;
+    
+    
+  }
+  
+  .navbarItem ::after {
+    content: ""; /* Create a pseudo-element for the underline effect */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.6px; /* Adjust underline height as needed */
+    background-color: #F4F5F0; /* Specify the color of the underline */
+    opacity: 0.5; /* Initially hide the underline */
+    transition: transform 0.3s ease, opacity 0.2s ease; /* Apply transitions */
+    transform: translate3d(-100%, 0, 0); /* Initially position the underline */
+    
+  }
+  .navbarItem :hover::after,
+  .navbarItem:focus::after{transform: translate3d(0, 0, 0);
+    opacity: 0.9;
+     /* Move the underline to its final position */
+    }
+  
+  

@@ -1,0 +1,212 @@
+.main{
+    width: auto;
+background-color: #F4F5F0;
+
+.gallery{
+    height: 175vh;
+
+    overflow: hidden;
+    background-color: black;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .galleryWrapper{
+
+        position: relative;
+
+        top: -12.5vh;
+
+        height: 200vh;
+
+        display: flex;
+
+        gap: 2vw;
+
+        padding: 2vw;
+        .column{
+            position: relative;
+
+            height: 100%;
+
+            width: 25%;
+
+            min-width: 250px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 2vw;
+
+            white-space: nowrap;
+            
+            .imageContainer{
+                height: 100%;
+                width: 100%;
+                position: relative;
+                border-radius: 1vw;
+                overflow: hidden;
+               
+                img{
+                    object-fit: cover;
+                    
+                }
+            }
+
+            &:nth-of-type(1){
+
+                    top: -40%;
+    
+                }
+    
+            &:nth-of-type(2){
+    
+                    top: -50%;
+    
+                }
+    
+            &:nth-of-type(3){
+    
+                    top: -55%;
+    
+                }
+    
+            &:nth-of-type(4){
+    
+                    top: -65%;
+    
+                }
+            }
+        }
+    }
+  
+
+    .hero {
+        height: 100vh;
+        background-color: #F4F5F0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        padding-top: 6vh; /* Adjust this to the height of the navbar */
+      }
+      .textContainer {
+        display: inline;
+        display: flex;
+        width: 100%;
+      }
+      
+      .textHero {
+        font-family: 'Magtis', sans-serif;
+        font-size: 6rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        padding: 0 20px;
+      }
+      .textHero2 {
+        font-family: 'Lingkawi', sans-serif;
+        font-size: 4rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 0 10px;
+        word-spacing: 0.3em;
+        display: inline;
+      }
+      .textHero3{
+        margin-top: 36px;
+        font-weight: 400;
+      }
+      .textHero4{
+        font-family: 'Magtis', sans-serif;
+        font-size: 3rem;
+        justify-content: center;
+        text-align: center;
+   
+        margin-left: 10px;
+        width: 70%;
+      }
+      
+      
+      @media (max-width: 768px) {
+        .textHero {
+          font-size: 3rem;
+        }
+      }
+      .registrationContainer {
+     
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+        border: 1px solid black; /* Border to mimic paper edge */
+        border-radius: 8px; /* Slightly rounded corners */
+        padding: 2rem;
+        max-width: 600px;
+        width: 100%;
+        margin: 2rem auto; /* Center align and add margin */
+        background-color: #000;
+        line-height: 1.6; /* Space out text */
+        margin-top: 60px;
+        
+      
+
+        .registrationForm {
+          margin-top: 20px; 
+        display: flex;  
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 5px;
+        font-size: 0.8em;
+         // Centers items horizontally
+        justify-content: center;
+        
+        
+
+        .label{
+            display: block; // Ensure each label occupies its own line
+            margin-bottom: 2px;
+            color: #F4F5F0;
+            
+        }
+      
+
+        input[type="text"],
+        input[type="email"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #000;
+          border-radius: 5px;
+          box-sizing: border-box;
+          background-color: #F4F5F0;
+
+        }
+        .h2 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+      
+    }
+    .textJoin{
+      color :#F4F5F0;
+    }
+    
+    .registrationForm button[type="submit"] {
+        padding: 10px 20px;
+        margin-top: 10px; // Add space above the button
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        align-self: center;
+        width: 200px;
+        
+      
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }}
+}

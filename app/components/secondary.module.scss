@@ -1,0 +1,81 @@
+
+.projects{
+    position: relative;
+    color: white;
+    //margin-top: 15vh;
+    padding: 10%;
+}
+
+.projectDescription{
+    display: flex;
+   
+    width: 100%;
+    gap: 5%;
+    justify-content: space-between;
+}
+
+
+.imageContainer img{
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    
+}
+
+.column{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    font-size: 1.6vw;
+}
+
+.column:last-of-type{
+    align-items: flex-end;
+    font-size: 1vw;
+    justify-content: flex-end;
+}
+
+.projectList{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    margin-top: 100px;
+  
+}
+.projectEl {
+    width: 100%;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.6vw;
+    display: flex;
+    justify-content: flex-end;
+/* Remove default border */
+    margin-bottom: 20px; /* Add space between categories */
+    position: relative;
+    padding-right: 4%; /* Add padding to the right for spacing */
+    padding-top: 20px;
+
+}
+
+.projectEl::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust to position the underline below the text */
+    right: 0;
+    width: 140%; /* Extend the underline */
+height: 1.5px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+// .projectEl:hover::after {
+//     width: 180%; /* Increase width on hover */
+// }
+
+.projectEl h2 {
+    margin: 0;
+    cursor: pointer;
+}
